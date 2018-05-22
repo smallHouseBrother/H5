@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*标签选择器*/
+		div{
+			font-size: 50px;
+			color: rgb(0, 0, 0);
+			color: #12abef;
+		}
+	</style>
+</head>
+<body>
+	<form action="1.php" method="post">
+		<fieldset>
+			<legend>账户信息</legend>
+			<font color="red" size="2">*</font>用户名:<input type="text">
+			<br><br>
+			<font color="red" size="2">*</font>密&nbsp;码:<input type="password">
+			<br><br>
+			性别:<input type="radio" checked="checked">男
+			<input type="radio">女
+		</fieldset>
+		<fieldset>
+			<legend>公司信息</legend>
+			公司名称:<input type="text"><br><br>
+			公司所在地:<select>
+						<option selected="selected">--请选择--</option>
+						<option>北京</option>
+						<option>上海</option>
+						<option>河北</option>
+					</select>
+					<select>
+						<option selected="selected">--请选择--</option>
+						<optgroup label="北京">
+							<option>昌平</option>
+							<option>海淀</option>
+							<option>大兴</option>
+						</optgroup>
+						<optgroup label="河北">
+							<option>石家庄</option>
+							<option>张家口</option>
+							<option>廊坊</option>
+						</optgroup>
+					</select>
+					<select>
+						<option selected="selected">--请选择--</option>
+						<option>北京</option>
+						<option>上海</option>
+						<option>河北</option>
+					</select>
+				<br><br>
+				
+				<input type="checkbox" checked="checked">it
+				<input type="checkbox">家电
+				<input type="checkbox">通讯
+				<input type="checkbox">金融
+				<br><br>
+				<!-- 多选 -->
+				<select multiple="multiple">
+					<option selected="selected">--请选择--</option>
+					<option>north</option>
+					<option>south</option>
+					<option>east</option>
+				</select>
+			公司介绍:<textarea></textarea>
+			营业执照:<input type="file">
+			<br><br>
+			<input type="image" src="autom.png">
+		</fieldset>
+	</form>
+</body>
+</html>

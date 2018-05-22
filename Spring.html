@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<!-- SEO关键字 -->
+	<meta name="keywords" content="java培训 安卓培训 php培训 C++培训 C培训 移动开发培训">
+
+	<meta name="direction" content="这里是网页描述 SEO用的 百度搜到显示的">
+
+	<!-- 网页重定向  http-equiv把 content 属性关联到 HTTP 头部-->
+	<!-- <meta http-equiv="refresh" content="5; http://www.baidu.com"> -->
+
+	<!-- 站点制作者 -->
+	<meta name="Author" content="xmg">
+
+	<!-- 链接外部样式表文件 -->
+	<link rel="stylesheet" href="1.css">
+
+	<!-- icon 图标 -->
+	<link rel="icon" href="autom.png">
+
+	<title>春季</title>
+	<!-- 超链接优化写法 -->
+	<base target="_blank">
+</head>
+<body>
+	<a href="Spring.html">spring</a>
+	<a href="Summer.html">summer</a>
+	<a href="autom.html">  autome</a>
+	<img src="spring.png">
+
+	<!-- 不知道链接时 空链 <、空格、> -->
+	<a href="#">空&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;链</a>
+	&lt; p &gt;  &copy;
+	<a href="zip.rar">zip</a>
+
+	<!-- 无序列表 空心小圆圈circle 小方块square 实心圆圈disc -->
+	<ul type="square">
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+	</ul>
+
+	<!-- 有序列表 l a A i I start 决定了开始的数字-->
+	<ol type="I", start="2">
+		<li>阿啊阿啊阿啊阿啊阿啊阿啊</li>
+		<li>bbbbbbbbbbbbb</li>
+		<li>吃吃吃吃吃吃吃吃吃吃</li>
+		<li>的点点滴滴点点滴滴的</li>
+		<li>饿饿饿饿饿饿饿饿饿饿</li>
+	</ol>
+
+
+	<!-- 自定义列表 -->
+	<dl>
+		<dt>small title</dt>
+		<dd>explain title 解释标题</dd>
+		<dd>help center</dd>
+		<dd>my</dd>
+		<dd>order</dd>
+	</dl>
+
+	<!-- 音乐标签 -->
+	<embed src="1.mp3" hidden="true"></embed>
+
+	<!-- 滚动 scroll循环滚动 slide只滚动一次就停止 alternate来回交替滚动.  direction up down left right-->
+	<marquee behavior="scroll" direction="up">small horse brother</marquee>
+
+	<!-- tr行 td列 cellspacing cellpadding距边框-->
+	<table border="1" width="500" height="100" cellspacing="0" cellpadding="5">
+		<caption>table head</caption>
+		<tr>
+			<td align="center">张三</td>
+			<td>18</td>
+			<td>挖掘机</td>
+		</tr>
+		<tr align="center">
+			<td>麻溜</td>
+			<td>23</td>
+			<td>大前端</td>
+		</tr>
+		<tr>
+			<td colspan="2">李四 23</td>
+			<!-- <td>23</td> 上面的合并两个，合并的这个注释掉-->
+			<td>iOS</td>
+		</tr>
+		<tr>
+			<td>返流</td>
+			<td>26</td>
+			<td rowspan="2">安卓</td>
+		</tr>
+		<tr>
+			<td>礼物</td>
+			<td>25</td>
+			<td>前端</td>
+		</tr>
+	</table>
+	
+	<!--  -->
+	<table border="2" bordercolor="red" width="500" height="300" cellspacing="0">
+		<tr>
+			<th>章三</th>
+			<th>20</th>
+			<th>安卓</th>
+		</tr>
+		<tr>
+			<td valign="bottom">章三</td>
+			<td>20</td>
+			<td>安卓</td>
+		</tr>
+	</table>
+
+
+	<br>
+	<table bgcolor="green" width="800" height="200" cellspacing="1" align="center">
+		<caption>课程表</caption>
+		<tr bgcolor="white">
+			<th width="80" colspan="2"></th>
+			<th>星期一</th>
+			<th>星期二</th>
+			<th>星期三</th>
+			<th>星期四</th>
+			<th>星期五</th>
+		</tr>
+		<tr align="center" bgcolor="white">
+			<td width="50" rowspan="2">上午</td>
+			<td width="30">1</td>
+			<td>语文</td>
+			<td>数学</td>
+			<td>化学</td>
+			<td>生活</td>
+			<td>历史</td>
+		</tr>
+		<tr bgcolor="white">
+			<!-- <td>章三</td> -->
+			<td>2</td>
+			<td>语文</td>
+			<td>数学</td>
+			<td>化学</td>
+			<td>生活</td>
+			<td>历史</td>
+		</tr>
+		<tr bgcolor="white">
+			<td rowspan="2" height="50">下午</td>
+			<td>1</td>
+			<td>语文</td>
+			<td>数学</td>
+			<td>化学</td>
+			<td>生活</td>
+			<td>历史</td>
+		</tr>
+		<tr bgcolor="white">
+			<!-- <td>章三</td> -->
+			<td>2</td>
+			<td>语文</td>
+			<td>数学</td>
+			<td>化学</td>
+			<td>生活</td>
+			<td>历史</td>
+		</tr>
+	</table>
+
+
+	<br><br><br>
+	<!-- 表单 action处理信息 readonly="readonly" disabled="disabled" checked默认选中项-->
+	<form action="1.php" method="post">
+		<!-- 对表单信息分组 legend表单信息分组名称-->
+		<fieldset>
+		<legend>分组信息</legend>
+		用户名:<input type="text" name="username" value="xmg" maxlength="6">
+		密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password" name="pwd">
+		<input type="radio" name="gender" checked="checked">男
+		<input type="radio" name="gender">女
+		<br><br>
+		<!-- 下拉列表 multiple多选-->
+		省(市):
+		<select>
+			<option>河北</option>	
+			<option>山西</option>
+			<option>山东</option>
+			<option selected="selected">北京</option>
+		</select>
+
+		<select multiple="multiple">
+			<option>河北</option>	
+			<option>山西</option>
+			<option>山东</option>
+			<option selected="selected">北京</option>
+		</select>
+		市(区):
+		<select>
+			<optgroup label="北京">
+			<option>昌平</option>
+			<option>海淀</option>
+			<option>大兴</option>
+			<option>朝阳</option>
+			</optgroup>
+			<optgroup label="广州">
+			<option>荔湾</option>
+			<option>南沙</option>
+			<option>天河</option>
+			<option>朝阳</option>
+			</optgroup>
+		</select>
+		<br><br>
+		<!-- 多选框 -->
+		<input type="checkbox" checked="checked">吸烟
+		<input type="checkbox">喝酒
+		<input type="checkbox">烫头
+
+		<!-- 多行文本框 cols输入字符长度-->
+		<textarea cols="10" rows="10"></textarea><br><br>
+		<!-- 文件上传空间 -->
+		<input type="file">
+		<!-- 文件提交按钮 -->
+		<input type="submit">
+		<!-- 普通按钮 不能提交 配合JS使用 -->
+		<input type="button" value="button">
+		<!-- 图片按钮 可提交-->
+		<input type="image" src="qiu.png">
+		<!-- 重置按钮 -->
+		<input type="reset">
+		</fieldset>
+	</form>
+
+
+
+	<br><br>
+	<form action="1.php" method="post">
+		<input type="date">
+		<input type="time">
+		<input type="email">
+		<input type="number" step="5">
+		<input type="url">
+		<input type="range" step="5">
+		<input type="submit">
+	</form>
+
+</body>
+</html>
