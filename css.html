@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<style type="text/css">
+	/*通配符选择器*/
+		/**{
+			font-size: 100px;
+			color: red;
+		}*/
+
+		/*空格后代标签、逗号并集，一起写交集*/
+		div.div1 ul.box li, div.div1 p{
+			color: red;
+			font-size: 50px;
+			font-weight: 700;/*文字粗细100-900 700开始加粗约等于bold不推荐*/
+			font-family: 微软雅黑;
+			font-style: italic;/*normal 和 italic两种值*/
+			line-height: 10px;
+			/*font: italic; 700 50px/10px 微软雅黑;*/		/*等于上面 50px/10px不能放italic前边*/
+			/*font: font-style font-weight font-size/line-height font-family 文字大小和字体在连写时必写*/
+			/*汉字可以写unicode编码*/
+		}
+
+		div.box p.p1, div.box div.div1 p{
+			color: green;
+			font-size: 100px;
+		}
+
+		p{
+			text-indent:2em;/*首行缩进2个字*/
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1></h1>
+		<div></div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="div1">
+		<ul class="box">
+			<li>xmg first</li>
+		</ul>
+	</div>
+	<div class="div1">
+		<p>xmg second</p>
+	</div>
+
+	<div class="box">
+		<p class="p1">xmg third</p>
+	</div>
+	<div class="box">
+		<div class="div1">
+			<p>xmg forth</p>
+		</div>
+	</div>
+</body>
+</html>

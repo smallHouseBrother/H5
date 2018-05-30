@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>document</title>
+	<!-- 外链 -->
+	<link rel="stylesheet" href="1.css">
+	<!-- 内嵌 -->
+	<style type="text/css">
+		/*居中*/
+		.content{
+			width: 800px;
+			margin: 0 auto;
+		}
+		.content h1{
+			font: 28px microsoft yahei;
+			text-align: center;
+		}
+		.content .box{
+			text-align: center;
+		}
+		.time, .news{
+			font-size: 14px;
+		}
+		.time{
+			color: rgb(190, 190, 190);
+		}
+		/*type 属性选择器*/
+		.box input[type=text]{
+			color: red;
+		}
+		.box input[type=button]{
+			color: green;
+			font-weight: 700;
+		}
+		.content p {
+			text-indent: 2em;
+			line-height: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<h1>Hello Jinliang</h1>
+		<div class="box">
+			<span class="time">2015nian12yue12ri 18:88</span>
+			<span class="news">Thank you for contacting App Store Review. We see that you are providing documentation that was requested in the Resolution Center for your app, "金融微店-信贷经理抢单助手.</span>
+			<a href="#">收藏本文</a>
+			<input type="text" value="请输入查询条件"></input>
+			<input type="button" value="搜索"></input>
+		</div>
+		<hr>
+		<p>We have received your documents and have forwarded them to the correct group for processing.</p>
+		<p>As soon as the review is complete, you will receive an email update.</p>
+		<p>We appreciate your patience and understanding during this process.</p>
+		<p>Best regards,</p>
+		<p>Katie</p>
+		<p>App Store Review</p>
+	</div>
+
+
+	<!-- 行内样式表 -->
+	<div style="font-size: 30px color=red"></div>
+</body>
+</html>
